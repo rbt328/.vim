@@ -6,11 +6,14 @@ set pastetoggle=<F2>
 set ignorecase
 set smartcase
 set incsearch
+set hlsearch
 set showcmd
+set ruler
 set number
 set list
 set listchars=tab:»\ ,trail:·
 set fileencodings=ucs-bom,utf-8,chinese,latin1
+set viminfo=%,'100,<50,s10,h
 
 "shortcut
 nnoremap <CR> :nohlsearch<CR><CR>
