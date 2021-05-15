@@ -17,6 +17,7 @@ set viminfo=%,'100,<50,s10,h
 "shortcut
 set pastetoggle=<F2>
 nnoremap <F3> :nohlsearch<CR>
+nnoremap <C-p> "0p
 inoremap <C-e> <End>
 
 "color
