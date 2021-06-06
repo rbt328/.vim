@@ -13,6 +13,9 @@ set list
 set listchars=tab:»\ ,trail:·
 set fileencodings=ucs-bom,utf-8,chinese,latin1
 set viminfo=%,'100,<50,s10,h
+set foldmethod=syntax
+set foldcolumn=1
+set foldlevel=99
 
 "shortcut
 set pastetoggle=<F2>
