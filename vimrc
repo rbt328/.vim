@@ -24,10 +24,8 @@ inoremap <C-e> <End>
 
 "color
 syntax on
-colorscheme desert
-highlight SpecialKey ctermfg=DarkBlue
-highlight TabLineFill ctermfg=Black ctermbg=Black
-highlight TabLineSel ctermfg=Black ctermbg=White
+set background=dark
+colorscheme PaperColor
 
 "auto-pairs
 let g:AutoPairsFlyMode = 1
