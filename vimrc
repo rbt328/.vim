@@ -2,7 +2,6 @@ set nocompatible
 set cindent
 set tabstop=4
 set shiftwidth=4
-set ttimeoutlen=0
 set ignorecase
 set smartcase
 set incsearch
@@ -10,8 +9,8 @@ set hlsearch
 set showcmd
 set ruler
 set number
-set list
-set listchars=tab:»\ ,trail:·
+set list listchars=tab:»\ ,trail:·
+set timeout timeoutlen=3000 ttimeoutlen=100
 set fileencodings=ucs-bom,utf-8,chinese,latin1
 set viminfo=%,'100,<50,s10,h
 
@@ -19,6 +18,7 @@ set viminfo=%,'100,<50,s10,h
 set pastetoggle=<F2>
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <F4> :set number! list!<CR>
+nnoremap <F7> :exe 'set foldmethod=syntax foldlevel=99 foldcolumn=' . abs(&foldcolumn - 5)<CR>
 nnoremap <C-p> "0p
 inoremap <C-e> <End>
 
