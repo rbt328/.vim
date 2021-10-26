@@ -1,3 +1,4 @@
+set nocompatible
 set cindent
 set tabstop=4
 set shiftwidth=4
@@ -16,7 +17,7 @@ set viminfo=%,'100,<50,s10,h
 
 "shortcut
 set pastetoggle=<F2>
-nnoremap <F3> :nohlsearch<CR>
+nnoremap <F3> :set hlsearch!<CR>
 nnoremap <F4> :set number! list!<CR>
 nnoremap <C-p> "0p
 inoremap <C-e> <End>
