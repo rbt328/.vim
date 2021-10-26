@@ -16,9 +16,9 @@ set viminfo=%,'100,<50,s10,h
 
 "shortcut
 set pastetoggle=<F2>
-nnoremap <F3> :set hlsearch!<CR>
-nnoremap <F4> :set number! list!<CR>
-nnoremap <F7> :exe 'set foldmethod=syntax foldlevel=99 foldcolumn=' . abs(&foldcolumn - 5)<CR>
+nnoremap <F3> :set number! list!<CR>
+nnoremap <F4> :exe 'set foldmethod=syntax foldlevel=99 foldcolumn=' . abs(&foldcolumn - 5)<CR>
+nnoremap <CR> :nohlsearch<CR><CR>
 nnoremap <C-p> "0p
 inoremap <C-e> <End>
 
