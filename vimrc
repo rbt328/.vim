@@ -11,8 +11,11 @@ set ruler
 set number
 set list listchars=tab:»\ ,trail:·
 set timeout timeoutlen=3000 ttimeoutlen=100
+set viminfo=%,'100,<1000,s100,h
+set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin1
-set viminfo=%,'100,<50,s10,h
+set undofile
+set undodir=~/.vim/undodir
 
 "shortcut
 set pastetoggle=<F2>
