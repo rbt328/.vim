@@ -32,6 +32,11 @@ set t_Co=256
 set background=dark
 colorscheme PaperColor
 
+"netrw
+let g:netrw_winsize = 25
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
 "auto-pairs
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
