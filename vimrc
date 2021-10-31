@@ -19,6 +19,16 @@ set clipboard=autoselect
 set mouse=nv
 set undofile
 set undodir=~/.vim/undodir
+set tags=./tags;tags
+set omnifunc=syntaxcomplete#Complete
+set t_Co=256
+set background=dark
+let g:netrw_winsize = 25
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+syntax on
+filetype on
+filetype plugin on
 
 "shortcut
 set pastetoggle=<F2>
@@ -32,30 +42,13 @@ nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
 inoremap <C-e> <End>
 
-"syntax
-syntax on
-filetype on
-filetype plugin on
-set tags=./tags;tags
-set omnifunc=syntaxcomplete#Complete
-
-"color
-set t_Co=256
-set background=dark
+"plugin
 let g:PaperColor_Theme_Options = {'language':{'c':{'highlight_builtins':1},'cpp':{'highlight_standard_library':1}}}
 colorscheme PaperColor
 
-"netrw
-let g:netrw_winsize = 25
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-
-"auto-pairs
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 
-"taglist
-filetype on
 nnoremap <silent> <F8> :TlistToggle<CR>
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Use_Right_Window = 1
