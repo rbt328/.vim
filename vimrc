@@ -9,6 +9,7 @@ set hlsearch
 set showcmd
 set ruler
 set number
+set laststatus=2
 set list listchars=tab:»\ ,trail:·
 set timeout timeoutlen=3000 ttimeoutlen=100
 set viminfo=%,'100,<1000,s100,h
@@ -31,10 +32,17 @@ nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
 inoremap <C-e> <End>
 
-"color
+"syntax
 syntax on
+filetype on
+filetype plugin on
+set tags=./tags;tags
+set omnifunc=syntaxcomplete#Complete
+
+"color
 set t_Co=256
 set background=dark
+let g:PaperColor_Theme_Options = {'language':{'c':{'highlight_builtins':1},'cpp':{'highlight_standard_library':1}}}
 colorscheme PaperColor
 
 "netrw
