@@ -11,6 +11,7 @@ set ruler
 set number
 set laststatus=2
 set list listchars=tab:»\ ,trail:·
+set foldmethod=syntax foldlevel=99 foldcolumn=0
 set timeout timeoutlen=3000 ttimeoutlen=100
 set viminfo=%,'100,<1000,s100,h
 set encoding=utf-8
@@ -33,7 +34,7 @@ filetype plugin on
 "shortcut
 set pastetoggle=<F2>
 nnoremap <F3> :set number! list!<CR>
-nnoremap <F4> :exe 'set foldmethod=syntax foldlevel=99 foldcolumn=' . abs(&foldcolumn - 4)<CR>
+nnoremap <F4> :let &foldcolumn = (&foldcolumn ? 0 : 4)<CR>
 nnoremap <CR> :nohlsearch<CR><CR>
 nnoremap <Tab> <C-w><C-w>
 nnoremap <C-n> :cnext<CR>
@@ -41,6 +42,7 @@ nnoremap <C-p> :cprev<CR>
 nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
 inoremap <C-e> <End>
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 "plugin
 let g:PaperColor_Theme_Options = {'language':{'c':{'highlight_builtins':1},'cpp':{'highlight_standard_library':1}}}
