@@ -16,12 +16,12 @@ set timeout timeoutlen=3000 ttimeoutlen=100
 set viminfo=%,'100,<1000,s100,h
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin1
-set clipboard=autoselect
 set mouse=nv
 set undofile
 set undodir=~/.vim/undodir
 set tags=./tags;tags
 set omnifunc=syntaxcomplete#Complete
+set completeopt=menuone,preview
 set t_Co=256
 set background=dark
 let g:netrw_winsize = 25
