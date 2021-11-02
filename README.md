@@ -1,7 +1,7 @@
 ## .vim
 
 ```
-git clone git://github.com/rbt328/.vim.git
+yum update -y curl libcurl nss
 ```
 
 ## tags
