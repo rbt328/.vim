@@ -20,13 +20,11 @@ set mouse=nv
 set undofile
 set undodir=~/.vim/undodir
 set tags=./tags;tags
+set path=.,/usr/include,,**
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,preview
 set t_Co=256
 set background=dark
-let g:netrw_winsize = 25
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
 syntax on
 filetype on
 filetype plugin on
@@ -36,7 +34,6 @@ set pastetoggle=<F2>
 nnoremap <F3> :set number! list!<CR>
 nnoremap <F4> :let &foldcolumn = (&foldcolumn ? 0 : 4)<CR>
 nnoremap <CR> :nohlsearch<CR><CR>
-nnoremap <Tab> <C-w><C-w>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
 nnoremap <Leader>v viw"0p
@@ -45,7 +42,11 @@ inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 "plugin
-let g:PaperColor_Theme_Options = {'language':{'c':{'highlight_builtins':1},'cpp':{'highlight_standard_library':1}}}
+let g:PaperColor_Theme_Options = {'language': {
+  \   'python': {'highlight_builtins' : 1},
+  \   'cpp': {'highlight_standard_library': 1},
+  \   'c': {'highlight_builtins' : 1}
+  \ }}
 colorscheme PaperColor
 
 let g:AutoPairsFlyMode = 1
