@@ -6,6 +6,7 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+set nowrapscan
 set showcmd
 set ruler
 set number
@@ -31,9 +32,9 @@ filetype plugin on
 
 "shortcut
 set pastetoggle=<F2>
-nnoremap <F3> :set number! list!<CR>
-nnoremap <F4> :let &foldcolumn = (&foldcolumn ? 0 : 4)<CR>
-nnoremap <CR> :nohlsearch<CR><CR>
+nnoremap <silent> <F3> :set number! list!<CR>
+nnoremap <silent> <F4> :let &foldcolumn = (&foldcolumn ? 0 : 4)<CR>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
 nnoremap <Leader>v viw"0p
