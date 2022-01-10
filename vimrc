@@ -22,6 +22,7 @@ set undofile
 set undodir=~/.vim/undodir
 set tags=./tags;tags
 set path=.,/usr/include,,**
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,preview
 set t_Co=256
