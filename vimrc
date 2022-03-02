@@ -6,7 +6,6 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-set nowrapscan
 set showcmd
 set ruler
 set number
