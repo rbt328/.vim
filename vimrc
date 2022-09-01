@@ -36,7 +36,13 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-p> :cprev<CR>
 nnoremap <Leader>v viw"0p
+nnoremap <Leader>a viw"ap
+nnoremap <Leader>b viw"bp
+nnoremap <Leader>c viw"cp
 vnoremap <Leader>v "0p
+vnoremap <Leader>a "ap
+vnoremap <Leader>b "bp
+vnoremap <Leader>c "cp
 inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
