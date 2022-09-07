@@ -16,7 +16,6 @@ set timeout timeoutlen=3000 ttimeoutlen=100
 set viminfo=%,'100,<1000,s100,h
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin1
-set mouse=nv
 set tags=./tags;tags
 set path=.,/usr/include,,**
 set cscopequickfix=s-,c-,d-,i-,t-,e-
