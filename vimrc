@@ -34,10 +34,8 @@ nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
 nnoremap <Leader>a viw"ap
 vnoremap <Leader>a "ap
-nnoremap <Leader>b viw"bp
-vnoremap <Leader>b "bp
-nnoremap <Leader>c viw"cp
-vnoremap <Leader>c "cp
+nnoremap <Leader>z viw"zp
+vnoremap <Leader>z "zp
 inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
@@ -59,14 +57,14 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:Lf_WorkingDirectoryMode = 'AF'
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_ShortcutF = '<C-P>'
-let g:Lf_ShortcutB = "<leader>fb"
-noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
-noremap <leader>ff :<C-U><C-R>=printf("Leaderf function %s", "")<CR><CR>
-noremap <leader>fw :<C-U><C-R>=printf("Leaderf window %s", "")<CR><CR>
-noremap <leader>fq :<C-U><C-R>=printf("Leaderf quickfix %s", "")<CR><CR>
-noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
-noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
-noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
+noremap <leader>m :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+noremap <leader>f :<C-U><C-R>=printf("Leaderf function %s", "")<CR><CR>
+noremap <leader>w :<C-U><C-R>=printf("Leaderf window %s", "")<CR><CR>
+noremap <leader>q :<C-U><C-R>=printf("Leaderf quickfix %s", "")<CR><CR>
+noremap <leader>d :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -s %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <leader>o :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
 
 "macOS
 if has("mac")
