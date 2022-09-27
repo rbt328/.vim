@@ -17,6 +17,7 @@ set viminfo=%,'100,<1000,s100,h
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin1
 set path=.,/usr/include,,**
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 set t_Co=256
 set background=dark
 
@@ -61,7 +62,7 @@ noremap <leader>m :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 noremap <leader>f :<C-U><C-R>=printf("Leaderf function %s", "")<CR><CR>
 noremap <leader>w :<C-U><C-R>=printf("Leaderf window %s", "")<CR><CR>
 noremap <leader>q :<C-U><C-R>=printf("Leaderf quickfix %s", "")<CR><CR>
-noremap <leader>g :<C-U><C-R>=printf("Leaderf gtags")<CR><CR>
+noremap <leader>g :<C-U><C-R>=printf("Leaderf gtags %s", "")<CR><CR>
 noremap <leader>d :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -s %s --auto-jump", expand("<cword>"))<CR><CR>
