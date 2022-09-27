@@ -29,10 +29,10 @@ filetype plugin on
 set pastetoggle=<F2>
 nnoremap <silent> <F3> :set number! list!<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-nnoremap <C-h> :tabp<CR>
-nnoremap <C-l> :tabn<CR>
-nnoremap <C-j> :cnext<CR>
-nnoremap <C-k> :cprev<CR>
+nnoremap <silent> <C-h> :tabp<CR>
+nnoremap <silent> <C-l> :tabn<CR>
+nnoremap <silent> <C-j> :cnext<CR>
+nnoremap <silent> <C-k> :cprev<CR>
 nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
 nnoremap <Leader>a viw"ap
@@ -58,12 +58,12 @@ colorscheme PaperColor
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 
-noremap <C-P> :GFiles<CR>
-noremap <leader>t :Files<CR>
-noremap <leader>f :BTags<CR>
-noremap <leader>q :BLines<CR>
-noremap <leader>b :Buffers<CR>
-noremap <leader>w :Windows<CR>
+noremap <silent> <C-P> :GFiles<CR>
+noremap <silent> <Leader>t :Files<CR>
+noremap <silent> <Leader>f :BTags<CR>
+noremap <silent> <Leader>q :BLines<CR>
+noremap <silent> <Leader>b :Buffers<CR>
+noremap <silent> <Leader>w :Windows<CR>
 
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit'}
 
