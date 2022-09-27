@@ -9,9 +9,9 @@ set hlsearch
 set showcmd
 set ruler
 set number
+set scrolloff=0
 set laststatus=2
 set list listchars=tab:»\ ,trail:·
-set foldmethod=syntax foldlevel=99 foldcolumn=0
 set timeout timeoutlen=3000 ttimeoutlen=100
 set viminfo=%,'100,<1000,s100,h
 set encoding=utf-8
@@ -19,10 +19,9 @@ set fileencodings=ucs-bom,utf-8,chinese,latin1
 set tags=./tags;tags
 set path=.,/usr/include,,**
 set cscopequickfix=s-,c-,d-,i-,t-,e-
-set omnifunc=syntaxcomplete#Complete
-set completeopt=menuone,preview
 set t_Co=256
 set background=dark
+
 syntax on
 filetype on
 filetype plugin on
@@ -30,18 +29,15 @@ filetype plugin on
 "shortcut
 set pastetoggle=<F2>
 nnoremap <silent> <F3> :set number! list!<CR>
-nnoremap <silent> <F4> :let &foldcolumn = (&foldcolumn ? 0 : 4)<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-nnoremap <C-n> :cnext<CR>
-nnoremap <C-p> :cprev<CR>
+nnoremap <C-j> :cnext<CR>
+nnoremap <C-k> :cprev<CR>
 nnoremap <Leader>v viw"0p
-nnoremap <Leader>a viw"ap
-nnoremap <Leader>b viw"bp
-nnoremap <Leader>c viw"cp
 vnoremap <Leader>v "0p
+nnoremap <Leader>a viw"ap
 vnoremap <Leader>a "ap
-vnoremap <Leader>b "bp
-vnoremap <Leader>c "cp
+nnoremap <Leader>z viw"zp
+vnoremap <Leader>z "zp
 inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
