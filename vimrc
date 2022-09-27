@@ -42,6 +42,11 @@ inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 "plugin
+call plug#begin()
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
 let g:PaperColor_Theme_Options = {'language': {
   \   'python': {'highlight_builtins' : 1},
   \   'cpp': {'highlight_standard_library': 1},
@@ -56,6 +61,21 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Exit_OnlyWindow = 1
+
+noremap <C-P> :GFiles<CR>
+noremap <leader>t :Files<CR>
+noremap <leader>f :BTags<CR>
+noremap <leader>b :Buffers<CR>
+noremap <leader>w :Windows<CR>
+
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit',
+  \ 'ctrl-q': function('s:build_quickfix_list')}
 
 "macOS
 if has("mac")
