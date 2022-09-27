@@ -29,6 +29,8 @@ filetype plugin on
 set pastetoggle=<F2>
 nnoremap <silent> <F3> :set number! list!<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap <C-h> :tabp<CR>
+nnoremap <C-l> :tabn<CR>
 nnoremap <C-j> :cnext<CR>
 nnoremap <C-k> :cprev<CR>
 nnoremap <Leader>v viw"0p
