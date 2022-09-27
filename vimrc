@@ -16,7 +16,6 @@ set timeout timeoutlen=3000 ttimeoutlen=100
 set viminfo=%,'100,<1000,s100,h
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,latin1
-set tags=./tags;tags
 set path=.,/usr/include,,**
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 set t_Co=256
@@ -57,14 +56,10 @@ colorscheme PaperColor
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 
-nnoremap <silent> <F8> :TlistToggle<CR>
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_Exit_OnlyWindow = 1
-
 noremap <C-P> :GFiles<CR>
 noremap <leader>t :Files<CR>
 noremap <leader>f :BTags<CR>
+noremap <leader>q :BLines<CR>
 noremap <leader>b :Buffers<CR>
 noremap <leader>w :Windows<CR>
 
