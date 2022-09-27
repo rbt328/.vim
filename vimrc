@@ -68,14 +68,7 @@ noremap <leader>f :BTags<CR>
 noremap <leader>b :Buffers<CR>
 noremap <leader>w :Windows<CR>
 
-function! s:build_quickfix_list(lines)
-  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
-  copen
-  cc
-endfunction
-
-let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit',
-  \ 'ctrl-q': function('s:build_quickfix_list')}
+let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit'}
 
 "macOS
 if has("mac")
