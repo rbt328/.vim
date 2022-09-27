@@ -29,10 +29,10 @@ filetype plugin on
 set pastetoggle=<F2>
 nnoremap <silent> <F3> :set number! list!<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-nnoremap <C-h> :tabp<CR>
-nnoremap <C-l> :tabn<CR>
-nnoremap <C-j> :cnext<CR>
-nnoremap <C-k> :cprev<CR>
+nnoremap <silent> <C-h> :tabp<CR>
+nnoremap <silent> <C-l> :tabn<CR>
+nnoremap <silent> <C-j> :cnext<CR>
+nnoremap <silent> <C-k> :cprev<CR>
 nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
 nnoremap <Leader>a viw"ap
@@ -60,15 +60,15 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:Lf_WorkingDirectoryMode = 'AF'
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_ShortcutF = '<C-P>'
-noremap <leader>m :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
-noremap <leader>f :<C-U><C-R>=printf("Leaderf function %s", "")<CR><CR>
-noremap <leader>w :<C-U><C-R>=printf("Leaderf window %s", "")<CR><CR>
-noremap <leader>q :<C-U><C-R>=printf("Leaderf quickfix %s", "")<CR><CR>
-noremap <leader>g :<C-U><C-R>=printf("Leaderf gtags %s", "")<CR><CR>
-noremap <leader>d :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
-noremap <leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
-noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -s %s --auto-jump", expand("<cword>"))<CR><CR>
-noremap <leader>o :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
+noremap <silent> <Leader>m :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+noremap <silent> <Leader>f :<C-U><C-R>=printf("Leaderf function %s", "")<CR><CR>
+noremap <silent> <Leader>w :<C-U><C-R>=printf("Leaderf window %s", "")<CR><CR>
+noremap <silent> <Leader>q :<C-U><C-R>=printf("Leaderf quickfix %s", "")<CR><CR>
+noremap <silent> <Leader>g :<C-U><C-R>=printf("Leaderf gtags %s", "")<CR><CR>
+noremap <silent> <Leader>d :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <silent> <Leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <silent> <Leader>s :<C-U><C-R>=printf("Leaderf! gtags -s %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <silent> <Leader>o :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
 
 "macOS
 if has("mac")
