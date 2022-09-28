@@ -68,6 +68,8 @@ nnoremap <Leader>z viw"zp
 vnoremap <Leader>z "zp
 inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+nmap <Leader>s <C-\>s
+nmap <Leader>c <C-\>c
 
 "macOS
 if has("mac")
