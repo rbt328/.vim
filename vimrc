@@ -60,6 +60,8 @@ nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
 nnoremap <silent> <C-j> :cnext<CR>
 nnoremap <silent> <C-k> :cprev<CR>
+nnoremap <Leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nnoremap <Leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
 nnoremap <Leader>a viw"ap
@@ -68,8 +70,6 @@ nnoremap <Leader>z viw"zp
 vnoremap <Leader>z "zp
 inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-nmap <Leader>s <C-\>s
-nmap <Leader>c <C-\>c
 
 "macOS
 if has("mac")
