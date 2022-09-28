@@ -53,7 +53,7 @@ let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit'
 "shortcut
 set pastetoggle=<F2>
 nnoremap <silent> <F3> :set number! list!<CR>
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap <silent> <C-n> :<C-u>nohlsearch<CR><C-n>
 nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
 nnoremap <silent> <C-j> :cnext<CR>
