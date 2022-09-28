@@ -9,7 +9,6 @@ set hlsearch
 set showcmd
 set ruler
 set number
-set autochdir
 set scrolloff=0
 set laststatus=2
 set list listchars=tab:»\ ,trail:·
