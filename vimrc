@@ -46,7 +46,7 @@ noremap <silent> <Leader>b :Buffers<CR>
 noremap <silent> <Leader>m :History<CR>
 noremap <silent> <Leader>f :BTags<CR>
 noremap <silent> <Leader>w :Windows<CR>
-noremap <silent> <Leader>q :BLines<CR>
+noremap <silent> <Leader>l :BLines<CR>
 noremap <silent> <Leader>g :Tags<CR>
 noremap <silent> <Leader>t :Files<CR>
 noremap <silent> <Leader>e :Rg <C-R><C-W><CR>
