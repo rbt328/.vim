@@ -46,6 +46,7 @@ noremap <silent> <Leader>m :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
 noremap <silent> <Leader>f :<C-U><C-R>=printf("Leaderf function %s", "")<CR><CR>
 noremap <silent> <Leader>w :<C-U><C-R>=printf("Leaderf window %s", "")<CR><CR>
 noremap <silent> <Leader>q :<C-U><C-R>=printf("Leaderf quickfix %s", "")<CR><CR>
+noremap <silent> <Leader>l :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 noremap <silent> <Leader>g :<C-U><C-R>=printf("Leaderf gtags %s", "")<CR><CR>
 noremap <silent> <Leader>d :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <silent> <Leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
