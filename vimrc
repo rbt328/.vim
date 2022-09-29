@@ -50,6 +50,7 @@ noremap <silent> <Leader>g :<C-U><C-R>=printf("Leaderf gtags %s", "")<CR><CR>
 noremap <silent> <Leader>d :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <silent> <Leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <silent> <Leader>o :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
+noremap <silent> <Leader>e :<C-U><C-R>=printf("Leaderf! rg %s", expand("<cword>"))<CR><CR>
 
 "shortcut
 set pastetoggle=<F2>
