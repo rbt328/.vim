@@ -54,7 +54,7 @@ noremap <silent> <Leader>e :<C-U><C-R>=printf("Leaderf! rg %s", expand("<cword>"
 
 "shortcut
 set pastetoggle=<F2>
-nnoremap <silent> <F3> :set number! list!<CR>
+nnoremap <silent> <F4> :set number! list!<CR>
 nnoremap <silent> <C-n> :<C-u>nohlsearch<CR><C-n>
 nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
