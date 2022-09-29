@@ -40,6 +40,7 @@ call plug#end()
 
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
+let g:fzf_preview_window = []
 noremap <silent> <C-P> :GFiles<CR>
 noremap <silent> <Leader>b :Buffers<CR>
 noremap <silent> <Leader>m :History<CR>
@@ -48,6 +49,7 @@ noremap <silent> <Leader>w :Windows<CR>
 noremap <silent> <Leader>q :BLines<CR>
 noremap <silent> <Leader>g :Tags<CR>
 noremap <silent> <Leader>t :Files<CR>
+noremap <silent> <Leader>e :Rg <C-R><C-W><CR>
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit'}
 
 "shortcut
