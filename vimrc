@@ -50,6 +50,7 @@ noremap <silent> <Leader>l :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 noremap <silent> <Leader>g :<C-U><C-R>=printf("Leaderf gtags %s", "")<CR><CR>
 noremap <silent> <Leader>d :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <silent> <Leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <silent> <Leader>s :<C-U><C-R>=printf("Leaderf! gtags -s %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <silent> <Leader>o :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
 noremap <silent> <Leader>e :<C-U><C-R>=printf("Leaderf! rg %s", expand("<cword>"))<CR><CR>
 
@@ -61,7 +62,7 @@ nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
 nnoremap <silent> <C-j> :cnext<CR>
 nnoremap <silent> <C-k> :cprev<CR>
-nnoremap <Leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nnoremap <Leader>cs :cs find s <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
