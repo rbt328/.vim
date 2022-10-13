@@ -39,6 +39,8 @@ call plug#end()
 
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
+let Tlist_Use_Right_Window = 1
+let Tlist_Exit_OnlyWindow = 1
 let g:Lf_WorkingDirectoryMode = 'AF'
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_ShortcutF = '<C-P>'
@@ -57,6 +59,7 @@ noremap <silent> <Leader>e :<C-U><C-R>=printf("Leaderf! rg %s", expand("<cword>"
 "shortcut
 set pastetoggle=<F2>
 nnoremap <silent> <F4> :set number! list!<CR>
+nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <C-n> :<C-u>nohlsearch<CR><C-n>
 nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
