@@ -63,8 +63,9 @@ nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
 nnoremap <silent> <C-j> :cnext<CR>
 nnoremap <silent> <C-k> :cprev<CR>
-nnoremap <Leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-nnoremap <Leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nnoremap <Leader>cs :cs find s <C-R>=expand("<cword>")<CR><CR>
+nnoremap <Leader>cc :cs find c <C-R>=expand("<cword>")<CR><CR>
+nnoremap <Leader>ct :cs find t <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>u viwg~
 nnoremap <Leader>v viw"0p
 vnoremap <Leader>v "0p
