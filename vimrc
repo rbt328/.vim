@@ -41,6 +41,7 @@ call plug#end()
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 let Tlist_Use_Right_Window = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Exit_OnlyWindow = 1
 let g:fzf_preview_window = []
 noremap <silent> <C-P> :GFiles<CR>
