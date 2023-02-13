@@ -3,7 +3,7 @@
 ```
 yum update -y curl libcurl nss
 
-dnf -y install ctags cscope python3-devel ncurses-devel
+dnf -y install ctags cscope ripgrep python3-devel ncurses-devel
 [global]# ./configure && make && make install
 
 :PlugInstall
