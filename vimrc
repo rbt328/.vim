@@ -9,8 +9,10 @@ set hlsearch
 set showcmd
 set ruler
 set number
+set autowrite
 set scrolloff=0
 set laststatus=2
+set backspace=indent,eol,start
 set list listchars=tab:»\ ,trail:·
 set timeout timeoutlen=3000 ttimeoutlen=100
 set viminfo=%,'100,<1000,s100,h
