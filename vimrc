@@ -38,12 +38,14 @@ colorscheme PaperColor
 call plug#begin()
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle'  }
 call plug#end()
 
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
+let Tlist_Auto_Open = 1
 let Tlist_Use_Right_Window = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 let g:fzf_preview_window = []
 noremap <silent> <C-P> :GFiles<CR>
@@ -61,6 +63,7 @@ let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit'
 set pastetoggle=<F2>
 nnoremap <silent> <F4> :set number! list!<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <C-t> :NERDTreeToggle<CR>
 nnoremap <silent> <C-n> :<C-u>nohlsearch<CR><C-n>
 nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
