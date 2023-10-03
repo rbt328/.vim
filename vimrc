@@ -64,7 +64,7 @@ set pastetoggle=<F2>
 nnoremap <silent> <F4> :set number! list!<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <C-t> :NERDTreeToggle<CR>
-nnoremap <silent> <C-n> :<C-u>nohlsearch<CR><C-n>
+nnoremap <silent> <C-g> :<C-u>nohlsearch<CR><C-g>
 nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
 nnoremap <silent> <C-j> :cnext<CR>
