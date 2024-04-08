@@ -42,7 +42,6 @@ call plug#end()
 
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
-let Tlist_Auto_Open = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
