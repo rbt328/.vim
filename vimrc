@@ -35,11 +35,13 @@ let g:PaperColor_Theme_Options = {'language': {
 colorscheme PaperColor
 
 "plugin
-call plug#begin()
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle'  }
-call plug#end()
+if has('vim')
+  call plug#begin()
+  Plug 'junegunn/fzf'
+  Plug 'junegunn/fzf.vim'
+  Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle'  }
+  call plug#end()
+endif
 
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
@@ -59,8 +61,8 @@ noremap <silent> <Leader>e :Rg <C-R><C-W><CR>
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-]': 'vsplit'}
 
 "shortcut
-set pastetoggle=<F2>
-nnoremap <silent> <F4> :set number! list!<CR>
+set pastetoggle=<F6>
+nnoremap <silent> <F7> :set number! list!<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <C-t> :NERDTreeToggle<CR>
 nnoremap <silent> <C-g> :<C-u>nohlsearch<CR><C-g>
@@ -74,18 +76,23 @@ nnoremap <Leader>cs :cs find s <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>cc :cs find c <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>ct :cs find t <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>v viw"0p
-vnoremap <Leader>v "0p
 nnoremap <Leader>a viw"ap
-vnoremap <Leader>a "ap
+vnoremap <Leader>a "ay
 nnoremap <Leader>z viw"zp
-vnoremap <Leader>z "zp
+vnoremap <Leader>z "zy
 inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-"macOS
-if has("mac")
-  autocmd BufReadPost *
-    \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
-    \ |   exe "normal! g`\""
-    \ | endif
-endif
+function! CleverTab()
+  if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+    return "\<Tab>"
+  else
+    return "\<C-N>"
+  endif
+endfunction
+inoremap <Tab> <C-R>=CleverTab()<CR>
+
+autocmd BufReadPost *
+  \ if line("'\"") >= 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
