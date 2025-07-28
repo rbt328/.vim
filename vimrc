@@ -35,13 +35,11 @@ let g:PaperColor_Theme_Options = {'language': {
 colorscheme PaperColor
 
 "plugin
-if has('vim')
-  call plug#begin()
-  Plug 'junegunn/fzf'
-  Plug 'junegunn/fzf.vim'
-  Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle'  }
-  call plug#end()
-endif
+call plug#begin()
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle'  }
+call plug#end()
 
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
