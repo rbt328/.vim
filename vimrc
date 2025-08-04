@@ -75,9 +75,7 @@ nnoremap <Leader>cc :cs find c <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>ct :cs find t <C-R>=expand("<cword>")<CR><CR>
 nnoremap <Leader>v viw"0p
 nnoremap <Leader>a viw"ap
-vnoremap <Leader>a "ay
 nnoremap <Leader>z viw"zp
-vnoremap <Leader>z "zy
 inoremap <C-e> <End>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
