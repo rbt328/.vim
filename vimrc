@@ -43,6 +43,7 @@ call plug#end()
 
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
+let g:AutoPairsShortcutFastWrap = '<C-m>'
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
@@ -63,7 +64,7 @@ set pastetoggle=<F6>
 nnoremap <silent> <F7> :set number! list!<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <C-t> :NERDTreeToggle<CR>
-nnoremap <silent> <C-g> :<C-u>nohlsearch<CR><C-g>
+nnoremap <silent> <C-g> :<C-u>nohlsearch<CR>2<C-g>
 nnoremap <silent> <C-h> :tabp<CR>
 nnoremap <silent> <C-l> :tabn<CR>
 nnoremap <silent> <C-j> :cnext<CR>
